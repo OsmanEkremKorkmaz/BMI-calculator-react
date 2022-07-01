@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-color: #f1f1f1;
-  color: #333;
+  color: #666;
 
 }
 
@@ -25,7 +25,6 @@ main {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  height: calc(100vh - 190px);
 }
 
 .component {
@@ -48,11 +47,11 @@ form {
 }
 
 button {
-  padding: 10px;
-  border-radius: 30px;
+  padding: 8px 10px;
+  border-radius: 10px;
   background-color: #fff;
-  border: 1px solid #333;
-  color: #333;
+  border: 2px solid rgb(16, 136, 249);
+  color: rgb(16, 136, 249);
   font-size: 1em;
   cursor: pointer;
   margin-left: auto;
@@ -61,24 +60,17 @@ button {
 
 input {
   padding: 5px 10px;
-  border-radius: 30px;
-  background-color: #fff;
-  border: 1px solid #333;
-  color: #333;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid #f1f1f1;
+  color: #666;
   font-size: 1em;
   margin-left: auto;
-  transition: color 0.2s ease-in-out;
-}
-
-label {
-  font-size: 1em;
-  color: #333;
-  margin-left: auto;
-  transition: color 0.2s ease-in-out;
+  outline: none;
 }
 
 button:hover {
-  background-color: #333;
+  background-color: rgb(16, 136, 249);
   color: #fff;
 }
 
@@ -88,9 +80,24 @@ footer {
   justify-content: center;
   background-color: #fff;
   height: 80px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+label {
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 a {
   text-decoration: none;
   color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
 }
